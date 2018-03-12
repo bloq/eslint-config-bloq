@@ -1,0 +1,43 @@
+{
+  "name": "eslint-config-bloq",
+  "version": "1.0.0",
+  "description": "ESLint config to use at Bloq",
+  "keywords": [
+    "bloq",
+    "eslint",
+    "eslintconfig"
+  ],
+  "license": "MIT",
+  "author": "Gabriel Montes <gabriel@bloq.com>",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "repository": "bloq/eslint-config-bloq",
+  "scripts": {
+    "lint": "eslint --cache .",
+    "precommit": "npm run lint",
+    "check": "npm-check -p",
+    "prepublish": "npm run lint && npm run check"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "npm-check": "^5.5.2"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3",
+    "eslint-config-standard": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-node": "*",
+    "eslint-plugin-promise": "*",
+    "eslint-plugin-standard": "*"
+  },
+  "preferGlobal": false,
+  "private": false
+}
