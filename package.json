@@ -17,26 +17,26 @@
   "scripts": {
     "lint": "eslint --cache .",
     "precommit": "npm run lint",
-    "check": "npm-check -p",
+    "check": "npm-check -i eslint-config* -i husky",
     "prepublish": "npm run lint && npm run check"
   },
   "devDependencies": {
-    "eslint": "^4.1.0",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^6.0.0",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "husky": "^0.14.3",
-    "npm-check": "^5.5.2"
+    "eslint": "4.19.0",
+    "eslint-config-standard": "11.0.0",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-node": "6.0.1",
+    "eslint-plugin-promise": "3.7.0",
+    "eslint-plugin-standard": "3.0.1",
+    "husky": "0.14.3",
+    "npm-check": "5.5.2"
   },
   "peerDependencies": {
     "eslint": ">= 3",
-    "eslint-config-standard": "*",
-    "eslint-plugin-import": "*",
-    "eslint-plugin-node": "*",
-    "eslint-plugin-promise": "*",
-    "eslint-plugin-standard": "*"
+    "eslint-config-standard": ">= 11",
+    "eslint-plugin-import": ">= 2",
+    "eslint-plugin-node": ">= 6",
+    "eslint-plugin-promise": ">= 3",
+    "eslint-plugin-standard": ">= 3"
   },
   "preferGlobal": false,
   "private": false
