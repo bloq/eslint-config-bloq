@@ -8,12 +8,16 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:jsdoc/recommended',
     'standard'
   ],
   parserOptions: {
     ecmaVersion: 2015,
     sourceType: 'script'
   },
+  plugins: [
+    'jsdoc'
+  ],
   rules: {
     'arrow-body-style': ['error', 'never'],
     'arrow-parens': ['error', 'as-needed'],
