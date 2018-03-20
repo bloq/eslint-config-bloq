@@ -1,5 +1,6 @@
 {
   "extends": [
-    "./index.js"
+    "./index.js",
+    "./experimental.js"
   ]
 }
