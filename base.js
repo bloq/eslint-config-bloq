@@ -29,6 +29,7 @@ module.exports = {
     'no-unused-vars': ['error', { args: 'after-used', ignoreRestSiblings: true, vars: 'all' }],
     'no-use-before-define': ['error', { classes: true, functions: true, variables: true }],
     'no-var': 'error',
+    'object-curly-spacing': ['warn', 'always'],
     'object-shorthand': ['error', 'always'],
     'prefer-const': 'error',
     'prefer-template': 'error',
