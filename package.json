@@ -38,7 +38,7 @@
     "eslint-config-standard": ">= 11",
     "eslint-plugin-import": ">= 2",
     "eslint-plugin-jsdoc": ">= 3",
-    "eslint-plugin-mocha": "=> 4",
+    "eslint-plugin-mocha": ">= 4",
     "eslint-plugin-node": ">= 6",
     "eslint-plugin-prefer-arrow": ">= 1",
     "eslint-plugin-promise": ">= 3",
