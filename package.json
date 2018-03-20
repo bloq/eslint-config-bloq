@@ -10,7 +10,10 @@
   "license": "MIT",
   "author": "Gabriel Montes <gabriel@bloq.com>",
   "files": [
-    "index.js"
+    "base.js",
+    "experimental.js",
+    "index.js",
+    "test-mocha.js"
   ],
   "main": "index.js",
   "repository": "bloq/eslint-config-bloq",
