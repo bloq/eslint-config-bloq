@@ -7,7 +7,7 @@ It is based on the ESLint recommended rules, the [JavaScript Standard style](htt
 ## Install
 
 ```bash
-$ npm install --save-dev eslint-config-bloq
+$ npm i -D eslint-config-bloq eslint eslint-plugin-import eslint-config-standard eslint-plugin-jsdoc eslint-plugin-mocha eslint-plugin-node eslint-plugin-prefer-arrow eslint-plugin-promise eslint-plugin-standard
 ```
 
 ## Configuration
@@ -22,4 +22,4 @@ Add this to the ESLint configuration file:
 
 ## License
 
-MIT
+[MIT License](https://github.com/bloq/eslint-config-bloq/blob/master/LICENSE).
