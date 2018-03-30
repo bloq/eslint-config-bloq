@@ -13,6 +13,7 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 2015,
+    experimentalObjectRestSpread: false,
     sourceType: 'script'
   },
   plugins: [
