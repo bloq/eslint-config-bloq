@@ -3,6 +3,9 @@
 'use strict'
 
 module.exports = {
+  extends: [
+    'plugin:promise/recommended'
+  ],
   plugins: [
     'prefer-arrow'
   ],
@@ -13,5 +16,8 @@ module.exports = {
     'no-multi-assign': 'warn',
     'no-negated-condition': 'warn',
     'no-param-reassign': 'warn',
+    'promise/always-return': 'off',
+    'promise/no-callback-in-promise': 'off',
+    'promise/no-nesting': 'off'
   }
 }
