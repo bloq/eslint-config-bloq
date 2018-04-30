@@ -38,6 +38,7 @@ module.exports = {
     'prefer-const': 'error',
     'prefer-template': 'error',
     'quote-props': ['error', 'consistent-as-needed'],
+    'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
     'strict': ['error', 'safe']
   }
 }
