@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-bloq",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "ESLint config to use at Bloq",
   "keywords": [
     "bloq",
