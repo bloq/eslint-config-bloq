@@ -13,15 +13,15 @@
     "base.js",
     "experimental.js",
     "index.js",
+    "polemical.js",
     "test-mocha.js"
   ],
   "main": "index.js",
   "repository": "bloq/eslint-config-bloq",
   "scripts": {
+    "check:outdated": "npm-check -i husky",
     "lint": "eslint --cache .",
-    "precommit": "npm run lint",
-    "check": "npm-check -i eslint-config* -i husky",
-    "prepublish": "npm run lint && npm run check"
+    "precommit": "npm run lint"
   },
   "devDependencies": {
     "eslint": "4.19.0",
