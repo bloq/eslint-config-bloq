@@ -29,7 +29,7 @@ module.exports = {
     'max-params': ['error', 3],
     'no-alert': 'error',
     'no-buffer-constructor': 'error',
-    'no-shadow': ['error', { builtinGlobals: true }],
+    'no-shadow': ['error', { builtinGlobals: true, hoist: 'functions' }],
     'no-unused-vars': ['error', { args: 'after-used', ignoreRestSiblings: true, vars: 'all' }],
     'no-use-before-define': ['error', { classes: true, functions: true, variables: true }],
     'no-var': 'error',
