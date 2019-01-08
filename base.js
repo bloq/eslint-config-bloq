@@ -1,5 +1,3 @@
-/* eslint max-len: ["warn", { "code": 132 }] */
-
 'use strict'
 
 module.exports = {
@@ -29,6 +27,7 @@ module.exports = {
     'arrow-parens': ['error', 'as-needed'],
     'complexity': ['error', 10],
     'consistent-return': 'error',
+    'max-len': ['warn', { code: 80, ignoreComments: false, tabWidth: 2 }],
     'max-params': ['error', 4],
     'no-alert': 'error',
     'no-buffer-constructor': 'error',
@@ -47,7 +46,7 @@ module.exports = {
     'promise/no-callback-in-promise': 'off',
     'promise/no-nesting': 'off',
     'quote-props': ['error', 'consistent-as-needed'],
-    'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
+    'quotes': ['error', 'single', { allowTemplateLiterals: false, avoidEscape: true }],
     'strict': ['error', 'safe']
   }
 }

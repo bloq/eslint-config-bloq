@@ -12,8 +12,8 @@
   "author": "Gabriel Montes <gabriel@bloq.com>",
   "files": [
     "base.js",
+    "controvertial.js",
     "index.js",
-    "polemical.js",
     "mocha.js",
     "node.js"
   ],
