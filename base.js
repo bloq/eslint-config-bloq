@@ -12,10 +12,9 @@ module.exports = {
   ],
   parserOptions: {
     ecmaFeatures: {
-      experimentalObjectRestSpread: true,
       jsx: false
     },
-    ecmaVersion: 2015,
+    ecmaVersion: 2018,
     sourceType: 'script'
   },
   plugins: [
