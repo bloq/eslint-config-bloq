@@ -14,6 +14,7 @@ module.exports = {
     'mocha/no-skipped-tests': 'warn',
     'no-console': 'warn',
     'no-unused-expressions': 'off',
-    'prefer-arrow/prefer-arrow-functions': 'off'
+    'prefer-arrow/prefer-arrow-functions': 'off',
+    'require-jsdoc': 'off'
   }
 }
