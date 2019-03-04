@@ -8,6 +8,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:jsdoc/recommended',
     'plugin:promise/recommended',
+    'plugin:require-path-exists/recommended',
     'standard'
   ],
   parserOptions: {
@@ -19,7 +20,8 @@ module.exports = {
   },
   plugins: [
     'jsdoc',
-    'promise'
+    'promise',
+    'require-path-exists'
   ],
   rules: {
     'arrow-body-style': ['error', 'never'],
@@ -42,10 +44,12 @@ module.exports = {
     'prefer-const': 'error',
     'prefer-template': 'error',
     'promise/always-return': 'off',
+    'promise/catch-or-return': ['error', { allowThen: true }],
     'promise/no-callback-in-promise': 'off',
     'promise/no-nesting': 'off',
     'quote-props': ['error', 'consistent-as-needed'],
     'quotes': ['error', 'single', { allowTemplateLiterals: false, avoidEscape: true }],
+    'require-jsdoc': 'warn',
     'strict': ['error', 'safe']
   }
 }
