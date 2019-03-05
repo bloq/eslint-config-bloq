@@ -1,5 +1,29 @@
+dist: trusty
+sudo: false
+
 language: node_js
 node_js:
   - "6"
   - "8"
   - "10"
+
+cache:
+  directories:
+    - "node_modules"
+
+jobs:
+  include:
+    - stage: npm release
+      script: echo skipping build script on deploy
+      before_deploy: 
+        - npm i --global otp-cli
+        - export NPM_OTP=$(otp-cli totp generate -k "$NPM_OTP_SECRET")
+        - export VERSION_TAG=$(git ls-remote origin | grep "$TRAVIS_COMMIT\s\+refs/tags/v\d\+\.\d\+\.\d\+\^{}$")
+        - echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
+      deploy:
+        on: 
+          branch: master
+        provider: script
+        script: if [ -n "$VERSION_TAG" ]; then echo npm publish --otp "$NTP_OTP"; fi
+        skip_cleanup: true
+      after_deploy: rm ~/.npmrc
