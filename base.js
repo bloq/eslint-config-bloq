@@ -45,6 +45,7 @@ module.exports = {
     'prefer-template': 'error',
     'promise/always-return': 'off',
     'promise/catch-or-return': ['error', { allowThen: true }],
+    'promise/no-return-wrap': ['error', { allowReject: true }],
     'promise/no-callback-in-promise': 'off',
     'promise/no-nesting': 'off',
     'quote-props': ['error', 'consistent-as-needed'],
