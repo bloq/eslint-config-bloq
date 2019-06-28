@@ -7,7 +7,7 @@ It is based on the ESLint recommended rules, the [JavaScript Standard style](htt
 ## Install
 
 ```bash
-npm install --save-dev eslint eslint-config-bloq eslint-config-standard eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-mocha eslint-plugin-node eslint-plugin-prefer-arrow eslint-plugin-promise eslint-plugin-standard
+npm install --save-dev eslint eslint-config-bloq eslint-config-standard eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-mocha eslint-plugin-node eslint-plugin-prefer-arrow eslint-plugin-promise eslint-plugin-require-path-exists eslint-plugin-standard
 ```
 
 ## Configuration
@@ -16,7 +16,9 @@ Add this to the ESLint configuration file:
 
 ```json
 {
-  "extends": ["bloq"]
+  "extends": [
+    "bloq"
+  ]
 }
 ```
 
@@ -24,4 +26,4 @@ Additional rule sets are available: `node`, `mocha` and `controvertial`.
 
 ## License
 
-MIT License
+MIT
