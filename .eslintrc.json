@@ -1,8 +1,14 @@
 {
   "extends": [
-    "./index.js"
+    "./base.js",
+    "./style.js"
   ],
   "rules": {
-    "max-len": ["warn", { "code": 132 }]
+    "max-len": [
+      "warn",
+      {
+        "code": 132
+      }
+    ]
   }
 }

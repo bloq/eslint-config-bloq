@@ -22,7 +22,7 @@ Add this to the ESLint configuration file:
 }
 ```
 
-Additional rule sets are available: `node`, `mocha` and `controvertial`.
+Additional rule sets are available: `style`, `node`, `node8`, `mocha` and `controvertial`.
 
 ## License
 

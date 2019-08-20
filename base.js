@@ -8,8 +8,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:jsdoc/recommended',
     'plugin:promise/recommended',
-    'plugin:require-path-exists/recommended',
-    'standard'
+    'plugin:require-path-exists/recommended'
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -24,11 +23,8 @@ module.exports = {
     'require-path-exists'
   ],
   rules: {
-    'arrow-body-style': ['error', 'never'],
-    'arrow-parens': ['error', 'as-needed'],
     'complexity': ['error', 10],
     'consistent-return': 'error',
-    'max-len': ['warn', { code: 80, ignoreComments: false, tabWidth: 2 }],
     'max-params': ['error', 4],
     'no-alert': 'error',
     'no-buffer-constructor': 'error',
@@ -40,16 +36,12 @@ module.exports = {
     'no-unused-vars': ['error', { args: 'after-used', ignoreRestSiblings: true, vars: 'all' }],
     'no-use-before-define': ['error', { classes: true, functions: true, variables: true }],
     'no-var': 'error',
-    'object-shorthand': ['error', 'always'],
     'prefer-const': 'error',
-    'prefer-template': 'error',
     'promise/always-return': 'off',
     'promise/catch-or-return': ['error', { allowThen: true }],
     'promise/no-return-wrap': ['error', { allowReject: true }],
     'promise/no-callback-in-promise': 'off',
     'promise/no-nesting': 'off',
-    'quote-props': ['error', 'consistent-as-needed'],
-    'quotes': ['error', 'single', { allowTemplateLiterals: false, avoidEscape: true }],
     'require-jsdoc': 'off',
     'strict': ['error', 'safe']
   }
