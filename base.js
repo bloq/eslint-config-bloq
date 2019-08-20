@@ -50,7 +50,7 @@ module.exports = {
     'promise/no-nesting': 'off',
     'quote-props': ['error', 'consistent-as-needed'],
     'quotes': ['error', 'single', { allowTemplateLiterals: false, avoidEscape: true }],
-    'require-jsdoc': 'warn',
+    'require-jsdoc': 'off',
     'strict': ['error', 'safe']
   }
 }

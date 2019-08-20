@@ -11,10 +11,10 @@ module.exports = {
     'mocha'
   ],
   rules: {
+    'jsdoc/require-jsdoc': 'off',
     'mocha/no-skipped-tests': 'warn',
     'no-console': 'warn',
     'no-unused-expressions': 'off',
-    'prefer-arrow/prefer-arrow-functions': 'off',
-    'require-jsdoc': 'off'
+    'prefer-arrow/prefer-arrow-functions': 'off'
   }
 }
