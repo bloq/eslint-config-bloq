@@ -50,5 +50,8 @@
     "eslint-plugin-standard": ">= 4"
   },
   "preferGlobal": false,
-  "private": false
+  "private": false,
+  "dependencies": {
+    "eslint-config-prettier": "^6.5.0"
+  }
 }

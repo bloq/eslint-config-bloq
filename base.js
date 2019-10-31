@@ -9,7 +9,8 @@ module.exports = {
     'plugin:jsdoc/recommended',
     'plugin:promise/recommended',
     'plugin:require-path-exists/recommended',
-    'standard'
+    'standard',
+    'prettier'
   ],
   parserOptions: {
     ecmaFeatures: {
