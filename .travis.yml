@@ -14,8 +14,8 @@ jobs:
 
       script: skip
 
-      # before_deploy:
-      #   - echo "//registry.npmjs.org/:_authToken=${NPM_API_TOKEN}" > ~/.npmrc
+      before_deploy:
+        - echo "//registry.npmjs.org/:_authToken=${NPM_API_TOKEN}" > ~/.npmrc
 
       deploy:
         on:
