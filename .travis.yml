@@ -1,27 +1,27 @@
+os: linux
+
 language: node_js
+
 node_js:
   - "12"
   - "10"
 
-cache: "npm"
+cache: npm
 
 jobs:
   include:
     - stage: npm release
 
-      script: echo skipping build script on deploy
+      script: skip
 
-      before_deploy:
-        - export VERSION_TAG=$(git ls-remote origin | grep "$TRAVIS_COMMIT\s\+refs/tags/v[0-9]\+\.[0-9]\+\.[0-9]\+\^{}$")
-        - echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
-        - npm i --global otp-cli
-        - export NPM_OTP=$(otp-cli totp generate -k "$NPM_OTP_SECRET")
+      # before_deploy:
+      #   - echo "//registry.npmjs.org/:_authToken=${NPM_API_TOKEN}" > ~/.npmrc
 
       deploy:
         on:
-          branch: master
+          # tags: true
+          all_branches: true
         provider: script
-        script: if [ -n "$VERSION_TAG" ]; then npm publish --access public --otp "$NPM_OTP"; else echo commit not tagged; fi
+        script: echo npm publish --otp $(npx -q otp-cli totp generate -k "$NPM_OTP_SECRET")
+        # script: npm publish --otp $(npx otp-cli totp generate -k "$NPM_OTP_SECRET")
         skip_cleanup: true
-
-      after_deploy: rm ~/.npmrc

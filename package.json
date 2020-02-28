@@ -20,7 +20,6 @@
   "main": "index.js",
   "repository": "bloq/eslint-config-bloq",
   "scripts": {
-    "check:outdated": "npm-check -i husky",
     "lint": "eslint --cache ."
   },
   "devDependencies": {
@@ -35,8 +34,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-require-path-exists": "^1.1.9",
     "eslint-plugin-standard": "^4.0.1",
-    "husky": "^3.0.9",
-    "npm-check": "^5.9.0"
+    "husky": "^3.0.9"
   },
   "peerDependencies": {
     "eslint": ">= 6",
@@ -50,7 +48,5 @@
     "eslint-plugin-promise": ">= 4",
     "eslint-plugin-require-path-exists": ">= 1",
     "eslint-plugin-standard": ">= 4"
-  },
-  "preferGlobal": false,
-  "private": false
+  }
 }
