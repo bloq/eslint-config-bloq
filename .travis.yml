@@ -22,6 +22,6 @@ jobs:
           # tags: true
           all_branches: true
         provider: script
-        script: echo npm whoami
+        script: npm whoami
         # script: npm publish --otp $(npx otp-cli totp generate -k "$NPM_OTP_SECRET")
         skip_cleanup: true
