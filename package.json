@@ -39,8 +39,8 @@
   },
   "devDependencies": {
     "eslint": "^7.2.0",
-    "husky": "^3.0.9",
-    "npm-check": "^5.9.0"
+    "husky": "^4.2.5",
+    "npm-check": "^5.9.2"
   },
   "preferGlobal": false,
   "private": false
