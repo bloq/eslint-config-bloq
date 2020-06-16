@@ -19,38 +19,53 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'script'
   },
-  plugins: [
-    'jsdoc',
-    'promise',
-    'require-path-exists'
-  ],
+  plugins: ['jsdoc', 'prettier', 'promise', 'require-path-exists'],
   rules: {
-    'arrow-body-style': ['error', 'never'],
-    'arrow-parens': ['error', 'as-needed'],
-    'complexity': ['error', 10],
+    'arrow-body-style': ['warn', 'never'],
+    'arrow-parens': ['warn', 'as-needed'],
+    'complexity': ['warn', 10],
     'consistent-return': 'error',
     'max-len': ['warn', { code: 80, ignoreComments: false, tabWidth: 2 }],
-    'max-params': ['error', 4],
-    'no-alert': 'error',
-    'no-buffer-constructor': 'error',
+    'max-params': ['warn', 4],
     'no-else-return': 'error',
     'no-multi-assign': 'error',
-    'no-negated-condition': 'error',
     'no-param-reassign': 'error',
-    'no-shadow': ['error', { allow: ['err'], builtinGlobals: true, hoist: 'functions' }],
-    'no-unused-vars': ['error', { args: 'after-used', ignoreRestSiblings: true, vars: 'all' }],
-    'no-use-before-define': ['error', { classes: true, functions: true, variables: true }],
+    'no-shadow': [
+      'error',
+      { allow: ['err'], builtinGlobals: true, hoist: 'functions' }
+    ],
+    'no-unused-vars': [
+      'error',
+      { args: 'after-used', ignoreRestSiblings: true, vars: 'all' }
+    ],
+    'no-use-before-define': [
+      'error',
+      { classes: true, functions: true, variables: true }
+    ],
     'no-var': 'error',
-    'object-shorthand': ['error', 'always'],
-    'prefer-const': 'error',
-    'prefer-template': 'error',
+    'object-shorthand': ['warn', 'always'],
+    'prefer-template': 'warn',
+    'prettier/prettier': [
+      'warn',
+      {
+        arrowParens: 'avoid',
+        quoteProps: 'consistent',
+        singleQuote: true,
+        semi: false,
+        trailingComma: 'none'
+      }
+    ],
     'promise/always-return': 'off',
     'promise/catch-or-return': ['error', { allowThen: true }],
     'promise/no-return-wrap': ['error', { allowReject: true }],
     'promise/no-callback-in-promise': 'off',
     'promise/no-nesting': 'off',
-    'quote-props': ['error', 'consistent-as-needed'],
-    'quotes': ['error', 'single', { allowTemplateLiterals: false, avoidEscape: true }],
+    'quotes': [
+      'warn',
+      'single',
+      { allowTemplateLiterals: false, avoidEscape: true }
+    ],
+    'quote-props': ['warn', 'consistent'],
     'require-jsdoc': 'off',
     'strict': ['error', 'safe']
   }

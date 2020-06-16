@@ -2,12 +2,12 @@
 
 This is Bloq's [ESLint](https://eslint.org) shareable config.
 
-It is based on the ESLint recommended rules, the [JavaScript Standard style](https://standardjs.com/) and an additional set of rules to enforce additional required checks.
+It is based on the ESLint recommended rules, the [JavaScript Standard style](https://standardjs.com/), [Prettier](https://prettier.io) and an additional set of rules to enforce Bloq's style.
 
 ## Install
 
 ```bash
-npm install --save-dev eslint eslint-config-bloq eslint-config-standard eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-mocha eslint-plugin-node eslint-plugin-prefer-arrow eslint-plugin-promise eslint-plugin-require-path-exists eslint-plugin-standard
+npm install --save-dev eslint eslint-config-bloq
 ```
 
 ## Configuration
@@ -22,7 +22,7 @@ Add this to the ESLint configuration file:
 }
 ```
 
-Additional rule sets are available: `node`, `mocha` and `controvertial`.
+Additional rule sets are available: `node`, `mocha` and `react` (which requires `eslint-plugin-react`).
 
 ## License
 

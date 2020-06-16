@@ -23,33 +23,24 @@
     "check:outdated": "npm-check -i husky",
     "lint": "eslint --cache ."
   },
-  "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.5.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsdoc": "^16.1.1",
-    "eslint-plugin-mocha": "^6.2.1",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-prefer-arrow": "^1.1.6",
+  "dependencies": {
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsdoc": "^27.0.7",
+    "eslint-plugin-mocha": "^7.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-arrow": "^1.2.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-require-path-exists": "^1.1.9",
     "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^2.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
     "husky": "^3.0.9",
     "npm-check": "^5.9.0"
-  },
-  "peerDependencies": {
-    "eslint": ">= 6",
-    "eslint-config-prettier": ">= 6",
-    "eslint-config-standard": ">= 14",
-    "eslint-plugin-import": ">= 2",
-    "eslint-plugin-jsdoc": ">= 16",
-    "eslint-plugin-mocha": ">= 6",
-    "eslint-plugin-node": ">= 10",
-    "eslint-plugin-prefer-arrow": ">= 1",
-    "eslint-plugin-promise": ">= 4",
-    "eslint-plugin-require-path-exists": ">= 1",
-    "eslint-plugin-standard": ">= 4"
   },
   "preferGlobal": false,
   "private": false
