@@ -6,20 +6,16 @@ node_js:
   - "12"
   - "10"
 
-cache: npm
-
 jobs:
   include:
     - stage: npm release
 
       script: skip
-
       before_deploy:
         - echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
-
       deploy:
         provider: script
         script: npm publish --otp $(npx -q otp-cli totp generate -k "$NPM_OTP_SECRET")
-        skip_cleanup: true
         on:
           tags: true
+          condition: $(git ls-remote origin | grep "$TRAVIS_COMMIT\s\+refs/heads/master$") != ""
