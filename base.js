@@ -30,6 +30,7 @@ module.exports = {
     'no-else-return': 'error',
     'no-multi-assign': 'error',
     'no-param-reassign': 'error',
+    'no-return-assign': ['error', 'always'],
     'no-shadow': [
       'error',
       { allow: ['err'], builtinGlobals: true, hoist: 'functions' }
