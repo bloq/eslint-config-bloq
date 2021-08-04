@@ -27,6 +27,7 @@ module.exports = {
     'consistent-return': 'error',
     'max-len': ['warn', { code: 80, ignoreComments: false, tabWidth: 2 }],
     'max-params': ['warn', 4],
+    'no-console': 'error',
     'no-else-return': 'error',
     'no-multi-assign': 'error',
     'no-param-reassign': 'error',
