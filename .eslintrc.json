@@ -1,8 +1,0 @@
-{
-  "extends": [
-    "./index.js"
-  ],
-  "rules": {
-    "max-len": ["warn", { "code": 132 }]
-  }
-}

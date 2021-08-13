@@ -1,18 +1,23 @@
 os: linux
+dist: focal
 
 language: node_js
-
 node_js:
-  - "12"
-  - "10"
+  - '14'
+
+script: npm run lint && npm run format:check
 
 jobs:
   include:
-    - stage: npm release
+    - stage: Test
+
+    - stage: NPM Release
 
       script: skip
+
       before_deploy:
         - echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
+
       deploy:
         provider: script
         script: npm publish --otp $(npx -q otp-cli totp generate -k "$NPM_OTP_SECRET")

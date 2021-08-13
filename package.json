@@ -1,47 +1,71 @@
 {
   "name": "eslint-config-bloq",
   "version": "2.4.0",
-  "description": "ESLint config to use at Bloq",
+  "description": "Common ESLint config used at Bloq",
   "keywords": [
     "bloq",
     "config",
     "eslint",
-    "eslintconfig"
+    "eslintconfig",
+    "lint",
+    "mocha",
+    "next.js",
+    "next",
+    "node"
   ],
   "license": "MIT",
   "author": "Gabriel Montes <gabriel@bloq.com>",
   "files": [
-    "base.js",
-    "controvertial.js",
-    "index.js",
-    "mocha.js",
-    "node.js"
+    "index.js"
   ],
   "main": "index.js",
   "repository": "bloq/eslint-config-bloq",
   "scripts": {
-    "check:outdated": "npm-check -i husky",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "eslint --cache ."
   },
   "dependencies": {
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-jsdoc": "^27.0.7",
-    "eslint-plugin-mocha": "^7.0.1",
+    "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsdoc": "^36.0.7",
+    "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prefer-arrow": "^1.2.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-require-path-exists": "^1.1.9",
-    "eslint-plugin-standard": "^4.0.1",
-    "prettier": "^2.0.5"
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-promise": "^5.1.0"
   },
   "devDependencies": {
-    "eslint": "^7.2.0",
-    "husky": "^4.2.5",
-    "npm-check": "^5.9.2"
+    "eslint": "^7.29.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2"
+  },
+  "peerDependencies": {
+    "next": "^11.0.1"
   },
   "preferGlobal": false,
-  "private": false
+  "private": false,
+  "eslintConfig": {
+    "extends": [
+      "./index.js",
+      "./node.js"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{css,js,json,md}": "prettier --write"
+  },
+  "prettier": {
+    "quoteProps": "consistent",
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
+  }
 }

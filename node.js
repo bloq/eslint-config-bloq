@@ -2,12 +2,11 @@
 
 module.exports = {
   env: {
-    browser: false,
     node: true
   },
   extends: ['plugin:node/recommended'],
-  plugins: ['node'],
-  rules: {
-    'no-alert': 'error'
-  }
+  parserOptions: {
+    ecmaVersion: 2020
+  },
+  plugins: ['node']
 }
