@@ -19,7 +19,7 @@ module.exports = {
     'no-param-reassign': 'warn',
     'no-return-assign': 'warn',
     'no-shadow': 'warn',
-    'no-unused-vars': 'error',
+    'no-unused-vars': ['error', { ignoreRestSiblings: true }],
     'no-use-before-define': 'error',
     'no-var': 'error',
     'object-shorthand': 'warn',
