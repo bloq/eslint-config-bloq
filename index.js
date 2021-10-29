@@ -30,6 +30,7 @@ module.exports = {
     'prefer-template': 'warn',
     'promise/always-return': 'off',
     'promise/catch-or-return': ['error', { allowFinally: true }],
+    'promise/no-nesting': 'off',
     'quotes': [
       'warn',
       'single',
