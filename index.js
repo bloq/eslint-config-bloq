@@ -7,11 +7,13 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:promise/recommended'],
   plugins: ['prefer-arrow', 'promise'],
   rules: {
+    'arrow-body-style': ['warn', 'never'],
     'camelcase': 'warn',
     'complexity': ['warn', 10], // https://github.com/eslint/eslint/issues/4808
     'consistent-return': 'warn',
+    'curly': ['warn', 'all'],
     'max-params': ['warn', 4],
-    'new-cap': 'warn',
+    'new-cap': ['warn', { capIsNewExceptionPattern: '^Big$' }],
     'no-alert': 'warn',
     'no-console': 'warn',
     'no-else-return': 'warn',
