@@ -26,20 +26,20 @@
     "lint": "eslint --cache ."
   },
   "dependencies": {
-    "eslint-config-next": "^11.0.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-jsdoc": "^36.0.7",
-    "eslint-plugin-mocha": "^9.0.0",
+    "eslint-config-next": "^12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.3.2",
+    "eslint-plugin-mocha": "^10.0.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
-    "eslint-plugin-promise": "^5.1.1"
+    "eslint-plugin-promise": "^6.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.29.0",
+    "eslint": "^8.17.0",
     "husky": "^4.3.8",
     "lint-staged": "^11.2.6",
-    "prettier": "^2.4.1"
+    "prettier": "^2.6.2"
   },
   "peerDependencies": {
     "next": "^11.0.1"
