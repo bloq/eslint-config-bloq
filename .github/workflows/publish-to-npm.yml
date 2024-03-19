@@ -1,9 +1,12 @@
+name: Pubish to NPM
+
 on:
   push:
     branches: master
 
 jobs:
   publish:
+    name: Publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
