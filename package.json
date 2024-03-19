@@ -41,9 +41,6 @@
     "lint-staged": "^13.0.1",
     "prettier": "^2.6.2"
   },
-  "peerDependencies": {
-    "next": "^13.0.0"
-  },
   "preferGlobal": false,
   "private": false,
   "eslintConfig": {
