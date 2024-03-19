@@ -27,19 +27,19 @@
   },
   "dependencies": {
     "eslint-config-next": "^13.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsdoc": "^39.3.2",
-    "eslint-plugin-mocha": "^10.0.5",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-jsdoc": "^43.0.0",
+    "eslint-plugin-mocha": "^10.0.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prefer-arrow": "^1.0.0",
     "eslint-plugin-promise": "^6.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.17.0",
-    "husky": "^4.3.8",
-    "lint-staged": "^13.0.1",
-    "prettier": "^2.6.2"
+    "eslint": "^8.0.0",
+    "husky": "^4.0.0",
+    "lint-staged": "^13.0.0",
+    "prettier": "^2.0.0"
   },
   "preferGlobal": false,
   "private": false,
