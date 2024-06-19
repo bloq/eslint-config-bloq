@@ -39,7 +39,7 @@ module.exports = {
       { allowTemplateLiterals: false, avoidEscape: true }
     ],
     'require-jsdoc': 'off',
-    'sort-keys': ['warn', 'asc', { caseSensitive: false }],
+    'sort-keys': ['warn', 'asc', { caseSensitive: false, natural: true }],
     'strict': ['error', 'safe']
   }
 }
