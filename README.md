@@ -20,13 +20,21 @@ Add this to the ESLint configuration file:
 }
 ```
 
-Additional rule sets are available: `bloq/node`, `bloq/next` and `bloq/mocha`.
+Additional rule sets are available:
+
+- `bloq/jsdoc`
+- `bloq/markdown`
+- `bloq/mocha`
+- `bloq/next`
+- `bloq/node`
 
 ## Note on code formatting
 
-This package is focused on identifying code patterns that are or lead to common errors.
-It is not intended to deal with code formatting and coding styles (even when a few rules may still be enabled).
+The base rules are focused in identifying code patterns that are or could lead to common errors.
+Enforcing code styles should be mainly done with tools like [Prettier](https://prettier.io), adding it to the end of any `extends` array to ensure the conflicting rules are deactivated:
 
-## License
-
-MIT
+```json
+{
+  "extends": ["bloq", "bloq/node", "prettier"]
+}
+```

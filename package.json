@@ -8,9 +8,10 @@
     "eslint",
     "eslintconfig",
     "lint",
+    "markdown",
     "mocha",
-    "next.js",
     "next",
+    "next.js",
     "node"
   ],
   "license": "MIT",
@@ -30,6 +31,7 @@
     "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-jsdoc": "^43.0.0",
+    "eslint-plugin-markdownlint": "^0.6.0",
     "eslint-plugin-mocha": "^10.0.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prefer-arrow": "^1.0.0",
@@ -41,12 +43,22 @@
     "lint-staged": "^13.0.0",
     "prettier": "^2.0.0"
   },
-  "preferGlobal": false,
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  },
   "private": false,
   "eslintConfig": {
     "extends": [
       "./index.js",
       "./node.js"
+    ],
+    "overrides": [
+      {
+        "files": "*.md",
+        "extends": [
+          "./markdown.js"
+        ]
+      }
     ]
   },
   "husky": {
@@ -55,14 +67,19 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{css,js,json,md}": "prettier --write"
+    "!*.{js,md}": [
+      "prettier --ignore-unknown --write"
+    ],
+    "*.{js,md}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
   },
+  "preferGlobal": false,
   "prettier": {
     "quoteProps": "consistent",
     "semi": false,
     "singleQuote": true,
-    "tabWidth": 2,
     "trailingComma": "none"
   }
 }
