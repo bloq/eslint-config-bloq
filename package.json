@@ -67,11 +67,11 @@
     }
   },
   "lint-staged": {
-    "!*.{js,md}": [
+    "!(*.{js,md})": [
       "prettier --ignore-unknown --write"
     ],
     "*.{js,md}": [
-      "eslint --cache --fix",
+      "eslint --cache --fix --quiet",
       "prettier --write"
     ]
   },
