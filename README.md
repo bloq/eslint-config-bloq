@@ -27,6 +27,7 @@ Additional rule sets are available:
 - `bloq/mocha`
 - `bloq/next`
 - `bloq/node`
+- `bloq/typescript`
 
 ## Note on code formatting
 

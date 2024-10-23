@@ -12,7 +12,8 @@
     "mocha",
     "next",
     "next.js",
-    "node"
+    "node",
+    "typescript"
   ],
   "license": "MIT",
   "author": "Gabriel Montes <gabriel@bloq.com>",
@@ -34,6 +35,8 @@
     "eslint-plugin-markdownlint": "^0.6.0",
     "eslint-plugin-mocha": "^10.0.0",
     "eslint-plugin-node": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
     "eslint-plugin-prefer-arrow": "^1.0.0",
     "eslint-plugin-promise": "^6.0.0"
   },
