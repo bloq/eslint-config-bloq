@@ -28,6 +28,7 @@ Additional rule sets are available:
 - `bloq/next`
 - `bloq/node`
 - `bloq/typescript`
+- `bloq/vitest`
 
 ## Note on code formatting
 
