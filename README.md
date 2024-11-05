@@ -43,22 +43,22 @@ Enforcing code styles should be mainly done with tools like [Prettier](https://p
 
 ## Release process
 
-Create a feature branch, commit and push the changes, and open a PR:
+After creating the a feature branch and committing the changes, add a commit to update the package version:
 
 ```sh
-git checkout -b $BRANCH
-# Commit the changes
-npm version $VERSION # Use major|minor|parch
-git push -u origin $BRANCH
-# Open a PR
+npm version $VERSION # Use major|minor|parch as needed
+git push --set-upstream origin $BRANCH
 ```
 
-Once the PR is approved, merge the changes locally, apply and push a version tag, and create a release:
+Once the commits are pushed, [open a PR](https://github.com/bloq/eslint-config-bloq/pulls).
+
+Then, when the PR is approved, merge the changes locally, apply and push a version tag if needed:
 
 ```sh
 git checkout master
 git merge --ff $BRANCH
-git tag -s -m "" v$(jq -r '.version' <package.json)
+TAG=v$(jq --raw-output '.version' <package.json); git tag --list $TAG | grep --quiet "^$TAG$" || git tag --sign --message="" $TAG
 git push --follow-tags
-# Create a new release
 ```
+
+Finally, [create a release](https://github.com/bloq/eslint-config-bloq/releases) to trigger the publication to NPM.
