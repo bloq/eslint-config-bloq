@@ -43,7 +43,7 @@ Enforcing code styles should be mainly done with tools like [Prettier](https://p
 
 ## Release process
 
-After creating the a feature branch and committing the changes, add a commit to update the package version:
+After creating a feature branch and committing the changes, add a commit to update the package version:
 
 ```sh
 npm version $VERSION # Use major|minor|parch as needed
