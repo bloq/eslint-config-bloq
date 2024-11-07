@@ -13,7 +13,8 @@
     "next",
     "next.js",
     "node",
-    "typescript"
+    "typescript",
+    "vitest"
   ],
   "license": "MIT",
   "author": "Gabriel Montes <gabriel@bloq.com>",
