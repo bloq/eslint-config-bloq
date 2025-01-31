@@ -5,7 +5,7 @@ module.exports = {
     es2020: true
   },
   extends: ['eslint:recommended', 'plugin:promise/recommended'],
-  plugins: ['prefer-arrow', 'promise'],
+  plugins: ['prefer-arrow', 'promise', 'sort-destructure-keys'],
   rules: {
     'arrow-body-style': ['warn', 'never'],
     'camelcase': 'warn',
@@ -39,6 +39,10 @@ module.exports = {
       { allowTemplateLiterals: false, avoidEscape: true }
     ],
     'require-jsdoc': 'off',
+    'sort-destructure-keys/sort-destructure-keys': [
+      'warn',
+      { caseSensitive: false }
+    ],
     'sort-keys': ['warn', 'asc', { caseSensitive: false, natural: true }],
     'strict': ['error', 'safe']
   }
