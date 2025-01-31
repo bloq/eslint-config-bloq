@@ -1,0 +1,9 @@
+{
+  "extends": ["./index.js", "./node.js"],
+  "overrides": [
+    {
+      "files": "*.md",
+      "extends": ["./markdown.js"]
+    }
+  ]
+}

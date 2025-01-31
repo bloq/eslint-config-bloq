@@ -53,39 +53,5 @@
     "eslint": "^8.0.0"
   },
   "private": false,
-  "eslintConfig": {
-    "extends": [
-      "./index.js",
-      "./node.js"
-    ],
-    "overrides": [
-      {
-        "files": "*.md",
-        "extends": [
-          "./markdown.js"
-        ]
-      }
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "!(*.{js,md})": [
-      "prettier --ignore-unknown --write"
-    ],
-    "*.{js,md}": [
-      "eslint --cache --fix --quiet",
-      "prettier --write"
-    ]
-  },
-  "preferGlobal": false,
-  "prettier": {
-    "quoteProps": "consistent",
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "none"
-  }
+  "preferGlobal": false
 }

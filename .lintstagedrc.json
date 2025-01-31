@@ -1,0 +1,4 @@
+{
+  "!(*.{js,md})": ["prettier --ignore-unknown --write"],
+  "*.{js,md}": ["eslint --cache --fix --quiet", "prettier --write"]
+}
