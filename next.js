@@ -20,6 +20,7 @@ module.exports = {
       }
     ],
     'react/jsx-sort-props': 'warn',
+    'react/no-unknown-property': 'error',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'sort-imports': 'off'
