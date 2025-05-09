@@ -22,6 +22,7 @@ Add this to the ESLint configuration file:
 
 Additional rule sets are available:
 
+- `bloq/esm`
 - `bloq/jsdoc`
 - `bloq/json`
 - `bloq/markdown`
