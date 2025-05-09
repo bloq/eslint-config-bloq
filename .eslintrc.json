@@ -2,8 +2,12 @@
   "extends": ["./index.js", "./node.js"],
   "overrides": [
     {
-      "files": "*.md",
-      "extends": ["./markdown.js"]
+      "extends": ["./json.js"],
+      "files": ["*.json"]
+    },
+    {
+      "extends": ["./markdown.js"],
+      "files": "*.md"
     }
   ]
 }

@@ -5,6 +5,7 @@ module.exports = {
     es2020: true
   },
   extends: ['eslint:recommended', 'plugin:promise/recommended'],
+  ignorePatterns: ['node_modules', '!.*'], // https://github.com/eslint/eslint/issues/10341#issuecomment-468548031
   plugins: ['prefer-arrow', 'promise', 'sort-destructure-keys'],
   rules: {
     'arrow-body-style': ['warn', 'never'],
