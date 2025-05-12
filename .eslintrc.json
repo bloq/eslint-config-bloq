@@ -7,7 +7,11 @@
     },
     {
       "extends": ["./markdown.js"],
-      "files": "*.md"
+      "files": ["*.md"]
+    },
+    {
+      "extends": ["./package-json.js"],
+      "files": ["package.json"]
     }
   ]
 }

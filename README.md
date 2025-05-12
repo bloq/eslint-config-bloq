@@ -29,6 +29,7 @@ Additional rule sets are available:
 - `bloq/mocha`
 - `bloq/next`
 - `bloq/node`
+- `bloq/package-json`
 - `bloq/typescript`
 - `bloq/vitest`
 

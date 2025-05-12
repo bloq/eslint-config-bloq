@@ -22,7 +22,10 @@
     "*.js"
   ],
   "main": "index.js",
-  "repository": "bloq/eslint-config-bloq",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bloq/eslint-config-bloq"
+  },
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -40,9 +43,11 @@
     "eslint-plugin-markdownlint": "^0.6.0",
     "eslint-plugin-mocha": "^10.0.0",
     "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-package-json": "^0.31.0",
     "eslint-plugin-prefer-arrow": "^1.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-sort-destructure-keys": "^2.0.0"
+    "eslint-plugin-sort-destructure-keys": "^2.0.0",
+    "jsonc-eslint-parser": "^2.4.0"
   },
   "devDependencies": {
     "eslint": "^8.57.1",
