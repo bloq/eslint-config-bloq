@@ -5,7 +5,7 @@ module.exports = {
     mocha: true
   },
   extends: ['plugin:mocha/recommended'],
-  plugins: ['mocha', 'prefer-arrow'],
+  plugins: ['prefer-arrow'],
   rules: {
     'mocha/no-exclusive-tests': 'error',
     'mocha/no-setup-in-describe': 'warn',

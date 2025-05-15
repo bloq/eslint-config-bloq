@@ -2,7 +2,6 @@
 
 module.exports = {
   extends: ['plugin:@vitest/legacy-recommended'],
-  plugins: ['@vitest'],
   rules: {
     // equivalent to mocha/no-skipped-tests
     '@vitest/no-disabled-tests': 'error',
