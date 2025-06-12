@@ -17,6 +17,7 @@ module.exports = {
         'newlines-between': 'always'
       }
     ],
+    'no-duplicate-imports': 'warn',
     'sort-imports': 'off'
   }
 }
