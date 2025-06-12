@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: ['next'],
-  ignorePatterns: ['out'],
+  ignorePatterns: ['.next', 'out'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
