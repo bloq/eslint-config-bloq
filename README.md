@@ -30,6 +30,7 @@ Additional rule sets are available:
 - `bloq/next`
 - `bloq/node`
 - `bloq/package-json`
+- `bloq/react`
 - `bloq/typescript`
 - `bloq/vitest`
 

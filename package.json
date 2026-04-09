@@ -13,6 +13,7 @@
     "next",
     "next.js",
     "node",
+    "react",
     "typescript",
     "vitest"
   ],
@@ -36,6 +37,7 @@
     "@typescript-eslint/parser": "^8.11.0",
     "@vitest/eslint-plugin": "^1.1.7",
     "eslint-config-next": "^13.0.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-jsdoc": "^43.0.0",
@@ -46,6 +48,8 @@
     "eslint-plugin-package-json": "^0.31.0",
     "eslint-plugin-prefer-arrow": "^1.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^6.1.1",
     "eslint-plugin-sort-destructure-keys": "^2.0.0",
     "jsonc-eslint-parser": "^2.4.0"
   },
