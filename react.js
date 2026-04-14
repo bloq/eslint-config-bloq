@@ -21,7 +21,9 @@ module.exports = {
     'react/no-unknown-property': 'error',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
-    'react-hooks/incompatible-library': 'off'
+    'react-hooks/incompatible-library': 'off',
+    'react-hooks/refs': 'off',
+    'react-hooks/set-state-in-effect': 'off'
   },
   settings: {
     react: {
