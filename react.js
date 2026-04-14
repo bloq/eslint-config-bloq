@@ -20,7 +20,8 @@ module.exports = {
     'react/jsx-sort-props': 'warn',
     'react/no-unknown-property': 'error',
     'react/prop-types': 'off',
-    'react/react-in-jsx-scope': 'off'
+    'react/react-in-jsx-scope': 'off',
+    'react-hooks/incompatible-library': 'off'
   },
   settings: {
     react: {
