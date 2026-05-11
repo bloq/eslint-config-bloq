@@ -7,7 +7,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
+    'plugin:react-hooks/recommended-legacy',
     'plugin:jsx-a11y/recommended'
   ],
   parserOptions: {
