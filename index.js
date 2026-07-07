@@ -13,6 +13,7 @@ module.exports = {
     'complexity': ['warn', 10], // https://github.com/eslint/eslint/issues/4808
     'consistent-return': 'warn',
     'curly': ['warn', 'all'],
+    'eqeqeq': ['error', 'always'],
     'max-params': ['warn', 4],
     'new-cap': ['warn', { capIsNewExceptionPattern: '^Big$' }],
     'no-alert': 'warn',
